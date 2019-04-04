@@ -27,5 +27,6 @@ class Transfer
         self.sender += self.amount
         self.receiver -= self.amount
         self.status = "received"
+      end
     end
 end
