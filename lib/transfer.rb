@@ -26,7 +26,7 @@ class Transfer
       if self.status = "complete"
         receiver.balance -= self.amount
         sender.balance += self.amount
-        self.status = "received"
+        self.status = "reversed"
       end
     end
 end
