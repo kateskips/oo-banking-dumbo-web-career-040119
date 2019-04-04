@@ -23,5 +23,9 @@ class Transfer
   end
   
     def reverse_transfer
+      if self.status = "complete"
+        self.sender += self.amount
+        self.receiver -= self.amount
+        self.status = "received"
     end
 end
